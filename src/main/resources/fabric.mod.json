@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "nobility-arsenal",
+  "version": "${version}",
+
+  "name": "Nobility's Arsenal",
+  "description": "crown",
+  "authors": [
+    "Startttttt"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "startttttt.nobility.arsenal.main"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
