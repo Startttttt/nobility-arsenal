@@ -1,15 +1,17 @@
 package startttttt.nobility.arsenal;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import startttttt.nobility.arsenal.items.armor.kingsArmor;
+import startttttt.nobility.arsenal.items.armor.nobilityMaterials;
 
 public class main implements ModInitializer {
-	public final Item KINGSCROWN = new kingsCrown();
+	public static final String MODID = "nobility-arsenal";
 
 	public void onInitialize() {
-		Registry.register(Registry.ITEM, new Identifier("nobility-arsenal", "kings-crown"), KINGSCROWN);
+		Registry.register(Registry.ITEM, new Identifier(MODID, "kings-crown"), new kingsArmor(nobilityMaterials.KING, EquipmentSlot.HEAD));
 	}
 }
